@@ -39,7 +39,7 @@ jobs:
             # Validate redot-cpp compatibility on one arbitrary editor build.
             redot-cpp: true
 
-            - name: Editor (target=editor)
+          - name: Editor (target=editor)
             cache-name: linux-editor
             target: editor
             scons-flags: module_mono_enabled=no
