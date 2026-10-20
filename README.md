@@ -26,7 +26,11 @@ to the last line of engine code. Redot's development is fully independent and tr
 community-driven, empowering users to help shape their engine to match their
 expectations.
 
-
+Before being open sourced in [February 2014](https://github.com/godotengine/godot/commit/0b806ee0fc9097fa7bda7ac0109191c9c5e0a1ac),
+Godot had been developed by [Juan Linietsky](https://github.com/reduz) and
+[Ariel Manzur](https://github.com/punto-) (both still maintaining Godot)
+for several years as an in-house engine, used to publish several work-for-hire
+titles.
 
 Redot was forked from Godot in [September 2024](https://github.com/Redot-Engine/redot-engine/commit/a12e9de5dd831e1ce0c839f0420b278ef0a6aa5b),
 intending to improve upon Godot in order to fulfill its potential and contribute to the shared

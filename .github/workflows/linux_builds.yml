@@ -39,6 +39,19 @@ jobs:
             # Validate redot-cpp compatibility on one arbitrary editor build.
             redot-cpp: true
 
+            - name: Editor (target=editor)
+            cache-name: linux-editor
+            target: editor
+            bin: ./bin/redot.linuxbsd.editor.x86_64
+            build-mono: true
+            doc-test: true
+            proj-conv: true
+            api-compat: true
+            artifact: true
+            # Validate redot-cpp compatibility on one arbitrary editor build.
+            redot-cpp: true
+
+
           - name: Editor with ThreadSanitizer (target=editor, dev_build=yes, use_tsan=yes, use_llvm=yes, linker=lld)
             cache-name: linux-editor-thread-sanitizer
             target: editor
