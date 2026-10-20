@@ -1,5 +1,9 @@
 name: 🔗 GHA
-on: [push, pull_request, merge_group, workflow_dispatch]
+on:
+  workflow_dispatch:          # manual "Run workflow" button
+  push:
+  pull_request:
+  merge_group:                # for merge queue / merge groups
 
 permissions:
   contents: read

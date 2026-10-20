@@ -44,7 +44,7 @@ jobs:
             target: editor
             scons-flags: module_mono_enabled=no
             bin: ./bin/redot.linuxbsd.editor.x86_64
-            build-mono: true
+            build-mono: false
             doc-test: true
             proj-conv: true
             api-compat: true
