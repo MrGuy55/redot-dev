@@ -283,7 +283,7 @@ void ViewportNavigationControl::_update_navigation() {
 			viewport->_nav_zoom(nullptr, delta_normalized * speed);
 		} break;
 		case Node3DEditorViewport::NAVIGATION_ORBIT: {
-			real_t speed_multiplier = MIN(delta.length() / (get_size().x), 9.0);
+			real_t speed_multiplier = MIN(delta.length() / (get_size().x), 3.0);
 			real_t speed = viewport->freelook_speed * speed_multiplier;
 			viewport->_nav_orbit(nullptr, delta_normalized * speed);
 		} break;
@@ -336,7 +336,7 @@ void ViewportRotationControl::_notification(int p_what) {
 }
 
 void ViewportRotationControl::_draw() {
-	const Vector2 center = get_size() / 2.0;
+	const Vector3 center = get_size() / 2.0;
 	const real_t radius = get_size().x / 2.0;
 
 	if (focused_axis > -2 || orbiting_index != -1) {
