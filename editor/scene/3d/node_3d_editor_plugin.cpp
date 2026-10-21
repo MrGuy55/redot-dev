@@ -336,7 +336,7 @@ void ViewportRotationControl::_notification(int p_what) {
 }
 
 void ViewportRotationControl::_draw() {
-	const Vector3 center = get_size() / 2.0;
+	const Vector2 center = get_size() / 2.0;
 	const real_t radius = get_size().x / 2.0;
 
 	if (focused_axis > -2 || orbiting_index != -1) {
@@ -2743,7 +2743,7 @@ void Node3DEditorViewport::_nav_orbit(Ref<InputEventWithModifiers> p_event, cons
 		cursor.x_rot += p_relative.y * radians_per_pixel;
 	}
 	// Clamp the Y rotation to roughly -90..90 degrees so the user can't look upside-down and end up disoriented.
-	cursor.x_rot = CLAMP(cursor.x_rot, -1.57, 1.57);
+	cursor.x_rot = CLAMP(cursor.x_rot, -90, 90);
 
 	if (invert_x_axis) {
 		cursor.y_rot -= p_relative.x * radians_per_pixel;
