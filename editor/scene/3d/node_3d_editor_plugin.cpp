@@ -283,7 +283,7 @@ void ViewportNavigationControl::_update_navigation() {
 			viewport->_nav_zoom(nullptr, delta_normalized * speed);
 		} break;
 		case Node3DEditorViewport::NAVIGATION_ORBIT: {
-			real_t speed_multiplier = MIN(delta.length() / (get_size().x), 3.0);
+			real_t speed_multiplier = MIN(delta.length() / (get_size().x), 9.0);
 			real_t speed = viewport->freelook_speed * speed_multiplier;
 			viewport->_nav_orbit(nullptr, delta_normalized * speed);
 		} break;
